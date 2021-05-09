@@ -1,0 +1,53 @@
+body
+{
+    background-image: linear-gradient(180deg, rgb(15, 12, 0), rgb(177, 138, 11));
+}
+.container
+{
+    align-content: center;
+    border: 5px solid rgb(224, 210, 2);
+    max-width: 1500px;
+    background-image: linear-gradient(360deg, rgb(9, 180, 180), rgb(1, 32, 37));
+    margin-top: -25px;
+    /* opacity: .7; */
+}
+/* .wf
+{
+    outline: 2.5px solid rgb(172, 161, 7);
+} */
+.ns
+{
+    background-color: silver;
+}
+.ns2
+{
+    background-color: gray;
+}
+.row
+{
+    min-height: 500px;
+}
+h3, h2
+{
+    color: rgb(12, 114, 97);
+    background: rgb(158, 148, 5);
+    text-align: center;
+    opacity: .8;
+    margin-top: 10px;
+}
+h4
+{
+    text-align: center;
+}
+h1
+{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    background-image: src="img/whJax";
+}
+.carousel-item image
+{
+margin: auto;
+position: fixed;
+}
