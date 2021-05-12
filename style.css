@@ -1,53 +1,115 @@
-body
+body 
 {
-    background-image: linear-gradient(180deg, rgb(15, 12, 0), rgb(177, 138, 11));
+    background-image: linear-gradient(180deg, rgb(15, 12, 0), rgb(0, 71, 80));
+    backdrop-filter: blur(3px);
+    text-align: center;
+    
 }
-.container
+
+.container 
 {
     align-content: center;
-    border: 5px solid rgb(224, 210, 2);
-    max-width: 1500px;
-    background-image: linear-gradient(360deg, rgb(9, 180, 180), rgb(1, 32, 37));
-    margin-top: -25px;
-    /* opacity: .7; */
+    /* border: 5px solid rgba(255, 230, 0, 0.363); */
+    /* max-width: 1500px; */
+    /* background-image: linear-gradient(360deg, rgb(0, 44, 54), rgb(0, 0, 0)); */
+    margin-top: 5px;
 }
+
 /* .wf
 {
     outline: 2.5px solid rgb(172, 161, 7);
 } */
-.ns
+
+/* .ns
 {
     background-color: silver;
-}
-.ns2
+} */
+
+/* .ns2
 {
     background-color: gray;
-}
-.row
+} */
+
+.row 
 {
     min-height: 500px;
 }
-h3, h2
+
+h3, h2 
 {
-    color: rgb(12, 114, 97);
+    color: rgb(255, 255, 255);
     background: rgb(158, 148, 5);
     text-align: center;
     opacity: .8;
     margin-top: 10px;
 }
-h4
+
+h4 
 {
     text-align: center;
+    color: cornsilk;
 }
-h1
+
+h1 
 {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 10px;
-    background-image: src="img/whJax";
 }
-.carousel-item image
+
+.carousel-item image 
 {
-margin: auto;
-position: fixed;
+    margin: auto;
+    position: fixed;
+}
+
+img:hover 
+{
+    transform: scale(1.1);
+    background-color: rgb(0, 63, 71);
+    /* border: 20px solid black; */
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(246, 250, 0, 0.67);
+    box-shadow: 0px 0px 50px 0px rgba(246, 250, 0, 0.67);
+}
+img:last-of-type:hover {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(246, 250, 0, 0.67);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(246, 250, 0, 0.67);
+    box-shadow: 0px 0px 30px 0px rgba(246, 250, 0, 0.67);
+}
+
+.wavy 
+{
+    position: relative;
+    -webkit-box-reflect: below -12px linear-gradient(tranparent, rgba(34, 28, 28, 0.5));
+}
+.wavy span 
+{
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-weight: 5em;
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+    margin: 20px;
+}
+
+@keyframes animate 
+{
+    0% {
+        transform: translateY(0px);
+    }
+    22% {
+        transform: translateY(-75px);
+    }
+    40%, 100% {
+        transform: translateY(0px);
+        /*more than 50px will get you choppy glitch effect*/
+    }
 }
