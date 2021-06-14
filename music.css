@@ -1,0 +1,199 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav
+{
+    height: 80px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(4.5px);
+}
+
+nav ul
+{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li
+{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a 
+{
+    color: rgba(255, 252, 252, 0.726);
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+a.active,a:hover
+{
+    border: 1px solid rgb(243, 186, 0);
+    transition: 1s;
+    animation: light 8s linear infinite;
+}
+
+
+
+.logo
+{
+    font-size: 35px;
+    font-weight: 100%;
+    padding: 0 100px;
+    line-height: 80px;
+}
+h4, h2, h1
+{
+    margin: 40px;
+    padding: 25px;
+    text-align: center;
+    color: #fff;    
+    font-size: 4em;
+    letter-spacing: 15px;
+    color: #d9ff00;
+    text-transform: uppercase;
+    /* width: 100%; */
+    text-align: center;
+    -webkit-box-reflect: below linear-gradient(transparent, rgba(0, 0, 0, 0.267));
+    /* line-height: 0.70em; */
+    outline: none;
+    animation: light 8s linear infinite;
+}
+h3
+{
+    text-align: center;
+    color: #fff;    
+    font-size: 1em;
+    color: #d9ff00;
+    text-transform: uppercase;
+    /* width: 100%; */
+    text-align: center;
+    -webkit-box-reflect: below linear-gradient(transparent, rgba(0, 0, 0, 0.267));
+    /* line-height: 0.70em; */
+    outline: none;
+    animation: light 8s linear infinite;
+}
+p
+{
+    text-align: center;
+    color: #fff;
+    
+}
+.container-fluid 
+{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/musicBack1.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 0 0 28px 0;
+    overflow-x: hidden;
+}
+
+@keyframes light
+{
+    0%
+    {
+        color: #e6d8e2;
+        text-shadow: none;
+    }
+    95%,97.1%,99%,100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #f0f403,
+        0 0 20px #03bcf4,
+        0 0 40px #cb90e7,
+        0 0 80px #cb90e7,
+        0 0 160px #03bcf4;
+    }
+}
+
+.heading 
+{
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.sub-heading 
+{
+    font-size: 1.5rem;
+}
+
+.card 
+{
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.178);
+    margin: 50px;
+}
+
+.card a 
+{
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 252, 252, 0.726);
+}
+.card:hover 
+{
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.404);
+    /* border: 20px solid black; */
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(246, 250, 0, 0.67);
+    box-shadow: 0px 0px 50px 0px rgba(246, 250, 0, 0.67);
+}
+.card:last-of-type:hover {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(246, 250, 0, 0.67);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(246, 250, 0, 0.67);
+    box-shadow: 0px 0px 30px 0px rgba(246, 250, 0, 0.67);
+}
+
+.wavy 
+{
+    position: relative;
+    -webkit-box-reflect: below -12px linear-gradient(tranparent, rgba(34, 28, 28, 0.5));
+}
+.wavy span 
+{
+    position: relative;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-weight: 5em;
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+    margin: 20px;
+}
+
+@keyframes animate 
+{
+    0% {
+        transform: translateY(0px);
+    }
+    22% {
+        transform: translateY(-75px);
+    }
+    40%, 100% {
+        transform: translateY(0px);
+        /*more than 50px will get you choppy glitch effect*/
+    }
+}
+
