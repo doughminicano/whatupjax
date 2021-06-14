@@ -8,10 +8,11 @@
 
 
 
-    <title>WhatsHappeningJax</title>
+    <title>What-Up-Jax</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
 
 
@@ -27,15 +28,29 @@
     <div class="container-fluid">
 
 
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
+        <nav class="navbar">
+            <div class="content">
+                <img class="logo" src="img/wulogo2.png" alt="whatupjax logo"></img>
+                <ul>
+                    <li><a class="active" href="">Home</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="famkids.html">Family&Kids</a></li>
+                    <li><a href="food.html">Foods</a></li>
+                    <li><a href="adult.html"><img src="img/wulogoA.png" alt="whatupjaxNight logo"></a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <label id="icon">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </nav>
 
         <div class="col wf">
 
 
             <div class="bd-example">
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -46,7 +61,8 @@
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="img/whJax2.png" alt="First slide">
                             <div class="carousel-caption d-none d-md-block">
-                                <h1>THE CITY OF JACKSONVILLE WELCOMES</h1>
+
+                                <h2 style="font-size: 35px;">THE CITY OF JACKSONVILLE WELCOMES'....</h2>
                             </div>
                         </div>
 
@@ -78,13 +94,15 @@
 
         <div class="row">
             <div class="col wf">
-                <h2>Music</h2>
+                <a href="music.html">
+                    <h2>Music</h2>
+                </a>
                 <div class="card">
                     <img class="card-img-bottom" src="img/beachStamos.png" alt="Card image cap">
                     <div class="card-body">
-                        <h4>FRIDAY, MAY 14,
+                        <h3>FRIDAY, MAY 14,
                             4:30-9:30 PM
-                        </h4>
+                        </h3>
                     </div>
                 </div>
 
@@ -94,7 +112,9 @@
                     </div>
                 </div>
 
-                <h2>Kids</h2>
+                <a href="famkids.html">
+                    <h2>Kids</h2>
+                </a>
                 <div class="card">
                     <img class="card-img-top" src="img/test1.png" alt="Card image cap">
                     <div class="card-body">
@@ -124,7 +144,9 @@
             </div>
 
             <div class="col wf">
-                <h2>Food</h2>
+                <a href="food.html">
+                    <h2>Food</h2>
+                </a>
 
                 <div class="card">
                     <img class="card-img-top" src="img/tipsyMargR.png" alt="Card image cap">
@@ -138,7 +160,9 @@
                     </div>
                 </div>
 
-                <h2>Sports</h2>
+                <a href="sports.html">
+                    <h2>Sports</h2>
+                </a>
 
                 <div class="card">
                     <img class="card-img-top" src="img/test1.png" alt="Card image cap">
@@ -153,7 +177,9 @@
                 </div>
 
                 <div class="col wf">
-                    <h2>Next Month</h2>
+                    <a href="next.html">
+                        <h2>Next Month</h2>
+                    </a>
 
 
                     <div class="card">
@@ -220,6 +246,30 @@
     </div>
     <!-- </div> -->
 
+    <div class="row justify-content-center-md-center">
+        <h6>Copyright 2021 DTG MOVEMENT</h6>
+    </div>
+
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -231,6 +281,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
